@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net452;netcoreapp2.0</TargetFrameworks>
+    <DebugType>portable</DebugType>
+    <AssemblyName>PropertyChangedContent.Fody</AssemblyName>
+    <RootNamespace>PropertyChangedContent.Fody</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <PackageReference Include="FodyCecil" Version="2.*" />
+    <PackageReference Include="PepitaPackage" Version="1.*" />
+    <Compile Include="..\CommonAssemblyInfo.cs" />
+  </ItemGroup>
+  
+<Target Name="AfterBuild">
+  <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SolutionDir)\packages\PropertyChanged.Fody.1.0.0" />
+</Target>
+  
+  <!--Target Name="BuildNugets" AfterTargets="CopyFilesToOutputDirectory" Condition="'$(ConfigurationName)' == 'Release'">
+    <ItemGroup>
+      <FilesToDelete Include="$(SolutionDir)nugets\**\*.*" />
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+    <MakeDir Directories="$(SolutionDir)nugets" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(ConfigurationName)\net452\PropertyChanged.dll" DestinationFolder="$(SolutionDir)nugets\lib\net452" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(ConfigurationName)\net452\PropertyChanged.xml" DestinationFolder="$(SolutionDir)nugets\lib\net452" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(ConfigurationName)\netstandard1.0\PropertyChanged.dll" DestinationFolder="$(SolutionDir)nugets\lib\netstandard1.0" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(ConfigurationName)\netstandard1.0\PropertyChanged.xml" DestinationFolder="$(SolutionDir)nugets\lib\netstandard1.0" />
+    <Copy SourceFiles="$(ProjectDir)PropertyChanged.Fody.nuspec" DestinationFolder="$(SolutionDir)nugets" />
+    <Copy SourceFiles="$(ProjectDir)bin\$(ConfigurationName)\net452\PropertyChanged.Fody.dll" DestinationFolder="$(SolutionDir)nugets" />
+    <Copy SourceFiles="$(ProjectDir)bin\$(ConfigurationName)\net452\PropertyChanged.Fody.pdb" DestinationFolder="$(SolutionDir)nugets" />
+    <PepitaPackage.CreatePackageTask NuGetBuildDirectory="$(SolutionDir)nugets" MetadataAssembly="$(OutputPath)PropertyChanged.Fody.dll" />
+  </Target!-->
+ 
+</Project>

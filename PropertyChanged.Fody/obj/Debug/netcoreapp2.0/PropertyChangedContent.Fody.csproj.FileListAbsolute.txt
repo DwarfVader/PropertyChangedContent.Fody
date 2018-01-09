@@ -1,0 +1,7 @@
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\bin\Debug\netcoreapp2.0\PropertyChangedContent.Fody.deps.json
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\bin\Debug\netcoreapp2.0\PropertyChangedContent.Fody.dll
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\bin\Debug\netcoreapp2.0\PropertyChangedContent.Fody.pdb
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\obj\Debug\netcoreapp2.0\PropertyChangedContent.Fody.csprojResolveAssemblyReference.cache
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\obj\Debug\netcoreapp2.0\PropertyChangedContent.Fody.csproj.CoreCompileInputs.cache
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\obj\Debug\netcoreapp2.0\PropertyChangedContent.Fody.dll
+D:\Eigene Dateien\Dokumente\Visual Studio 2017\Projects\PropertyChangedExtended\PropertyChanged.Fody\obj\Debug\netcoreapp2.0\PropertyChangedContent.Fody.pdb
