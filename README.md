@@ -6,7 +6,7 @@ If the constraints for content changed notification are not satisfied, it acts l
 Although ObservacleCollection implements "INotifyPropertyChanged", it gets ignored by "PropertyChangedContent.Fody". 
 
 In order to use it, add "PropertyChangedContent" to the weavers in "FodyWeavers.xml":
-<?xml version="1.0" encoding="utf-8"?>
-<Weavers>
-  <PropertyChangedContent/>
-</Weavers>
+//<?xml version="1.0" encoding="utf-8"?>
+//<Weavers>
+//  <PropertyChangedContent/>
+//</Weavers>
